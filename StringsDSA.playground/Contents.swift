@@ -13,17 +13,21 @@ You may assume all the characters consist of printable ascii characters.
 */
 
 
-//func reverseString(input: inout[Character]) {
-//    var i = 0
-//    var j = input.count - 1
-//
-//    while i < j {
-//        input.swapAt(i, j)
-//        i += 1
-//        j -= 1
-//    }
-//
-//}
+func reverseString(input: inout[String]) {
+    var i = 0
+    var j = input.count - 1
+
+    while i < j {
+        input.swapAt(i, j)
+        i += 1
+        j -= 1
+    }
+
+}
+
+var arr = ["h","e","l","l","o"]
+
+print(reverseString(input: &arr))
 
 
 
